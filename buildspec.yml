@@ -3,7 +3,7 @@ version: 0.2
 phases:
    install:
      commands:
-       - eho installing webserver
+       - echo installing webserver
        - sudo apt update
        - sudo apt install apache2 -y
        
