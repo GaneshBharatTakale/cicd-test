@@ -1,20 +1,20 @@
 version:0.2
 
 phases:
-  install:
+   install:
      commands:
        - eho installing webserver
        - sudo apt update
        - sudo apt install apache2 -y
        
-  build: 
+   build: 
      commands:
-        - echo building file
-        - cp index.html /var/www/html/
+       - echo building file
+       - cp index.html /var/www/html/
         
-  post_build:
+   post_build:
      commands:
-        - echo configured
+       - echo configured
    
- artifacts:
+artifacts:
      - "**/*"
